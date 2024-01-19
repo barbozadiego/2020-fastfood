@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+/*___________________________________________________/  Body  /____________________________________________________*/
+
+body {
+  font-family: arial;
+}
+
+.contenedor-principal {
+    width: 100%;
+    /* display: none; */
+    display: block;
+}
+
+
+/*___________________________________/  Modal Registro  /___________________________________*/
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1c20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.form-registro, .form-ingresar {
+  width: 40%;
+  background-color: #fff;
+  padding: 5em;
+  /* border: .1em solid #eee; */
+  border-radius: 2em;
+}
+
+.form-registro {
+  display: none;
+}
+
+/* #welcome {
+  background-color: #1a1c20;
+  padding: 1.5em;
+}
+
+.welcome-info {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.welcome-info strong {
+  color: #f0a500;
+} */
+
+#name, #user, #pass, #name-reg, #user-reg, #pass-reg {
+  width: 100%;
+  /* color: #fff; */
+  font-size: 1.2em;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  outline: none;
+  text-align: center;
+  /* outline: .1em solid #c00002; */
+}
+
+#btn-ingresar, #btn-registrarse {
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: none;
+  background-color: #00b347;
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+#btn-ingresar:hover {
+  background-color: #28df99;
+}
+
+#btn-registrarse {
+  background-color: #0f3057;
+}
+
+#btn-registrarse:hover {
+  background-color: #00587a;
+}
+
+.text-registrar {
+  color: #000;
+  font-size: 1.3em;
+  text-align: center;
+}
+.text-registrar:hover {
+  color: #00b347;
+}
+
+.exitoso {
+  font-size: 3em;
+  color: #00b347;
+  border: .1em solid #00b347;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+
+/*___________________________________/  Cabecera  /___________________________________*/
+
+.cabecera {
+  width: 100%;
+}
+
+
+.img-cabecera {
+  width: 100%;
+  display: block;
+}
+
+
+/*___________________________________/  Ménu  /___________________________________*/
+
+
+.menu {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+.menu i {
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #1a1c20;
+}
+
+.menu i:hover {
+  color: #c00002;
+}
+
+
+/*___________________________________/  Incrementar o Disminuir Productos /___________________________________*/
+
+.box-precio {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.decremento, .unidades, .incremento {
+  padding: 1em 1.5em;
+  border-top: .1em solid #e8e8e8;
+  border-bottom: .1em solid #e8e8e8;
+}
+
+.decremento, .incremento {
+  background-color: #eeeeee;
+  border-left: .1em solid #e8e8e8;
+  border-right: .1em solid #e8e8e8;
+}
+
+
+.decremento:hover, .incremento:hover {
+background-color: #fff;
+}
+
+
+/*___________________________________/ Seccion Productos Tienda  /___________________________________*/
+
+.fas.fa-cart-plus {
+  margin-right: .5em;
+}
+
+.productos h2, h3 {
+text-align: center;
+background-color: #fff;
+padding: .5em;
+}
+
+.productos h2 {
+font-size: 1.2em;
+border-top: .1em solid #eee;
+color: #393b44;
+}
+
+.productos h3 {
+color: #393b44;
+font-size: 1em;
+}
+
+.productos {
+    width: 100%;
+    padding: 0 7em 3em;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    grid-gap: 2em;
+}
+
+.box-producto {
+    border: .05em solid #eee;
+    max-width: 25em;
+  }
+  
+.box-producto:hover {
+  background-color: #000;
+}
+
+.box-producto img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.box-img-check{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productos span {
+    display: block;
+    text-align: center;
+    background-color:#1a1c20;
+    color: #fff;
+    padding: 1em;
+}
+
+.productos span:hover {
+  cursor: pointer;
+  background-color: #c00002;
+}
+
+
+/*___________________________________/ Seccion Carrito  /___________________________________*/
+
+.carrito {
+  width: 80%;
+  margin: 0 auto 3em auto;
+  padding: 4em;
+  background-color: #fff;
+  border: .1em solid #eee;
+  display: none;
+}
+
+.productCart h2 {
+  background-color:#1a1c20;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+
+.fas.fa-check-circle {
+  font-size: 3.5em;
+  color: #fff;
+  background-color:rgba(0,0,0,0.6);
+  padding: .2em;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.productList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16% 20% 16% 16% 16% 16%;
+  padding: 2em 0;
+  align-items: center;
+  border-bottom: .1em solid #eee;
+}
+
+
+.poster, .codigo, .nombre, .cantidad, .subtotal, .delete {
+  display: inline-block;
+  padding: 0 .5em ;
+  text-align: center;
+}
+
+.poster img {
+  width: 100%;
+  max-width: 40%;
+}
+
+.far.fa-trash-alt { /* Papelera Eliminar Producto */
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.far.fa-trash-alt:hover {
+ color: #c00002;
+}
+
+.total-pagar {
+  font-size: 1.4em;
+  display: block;
+  padding: 1em 2.3em;
+  color: #fff;
+  background-color: #1a1c20;
+  text-align: center;
+}
+
+.volver {
+  background-color: #c00002;
+  font-size: 1.3em;
+}
+
+/*___________________________________/ Seccion Pagar  /___________________________________*/
+
+.titulo-pagar {
+  display: block;
+  color: #fff;
+  background-color: #1a1c20;
+  font-size: 1.5em;
+  text-align: center;
+  padding: .8em;
+  margin-bottom: 1em;
+}
+
+.encabezado {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.pagar {
+  width: 80%;
+  margin: 0 auto 5em auto;
+  padding: 4em;
+  background-color: #fff;
+  border: .1em solid #eee;
+  display: none;
+  flex-flow: column;
+  /* justify-content: center;
+  text-align: center; */
+}
+
+.form-pagar {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+#monto-pagar {
+  width: 30%;
+  margin: 0 auto .7em auto;
+  font-size: 1.2em;
+  padding: .5em;
+  margin-bottom: 2em;
+}
+
+#btn-pagar {
+  width: 20%;
+  font-size: 1.1em;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color:#1a1c20;;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+#btn-pagar:hover {
+  background-color:#c00002;
+}
+
+.info-compra {
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #eee;
+  padding: 2em;
+}
+
+
+/*___________________________________/ Seccion Pie de Página  /___________________________________*/
+
+
+footer {
+  width: 100%;
+  height: 7em;
+  padding: 5em;
+  background-color: #1a1c20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.texto-pie {
+  color: #fff;
+}
+
+.texto-pie:nth-child(1) {
+  margin-bottom: .5em;
+}
+
+.texto-pie strong a{
+  color: #f0a500;
+}
+
+
+
+
+
+
+
+
+

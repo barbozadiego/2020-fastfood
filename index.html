@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego's Burgers</title>
+
+    <link rel="icon" href="img/favicon.jpg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="scripts/live.js"></script>
+    
+</head>
+<body>
+    
+        <!-- <div class="modal">
+             <form class="form-ingresar" id="ingreso">
+                <input type="text" id="user" placeholder="Usuario" autocomplete="off" required>
+                <input type="password" id="pass" placeholder="Contraseña" required>
+                <input type="submit" id='btn-ingresar' value="Ingresar">
+                <p id="btn-registro" class="text-registrar">Registrarse</p>
+            </form>
+
+             <form class="form-registro" id="registro">
+                <input type="text" id="name-reg" placeholder="Nombre" autocomplete="off" required>
+                <input type="text" id="user-reg" placeholder="Usuario" autocomplete="off" required>
+                <input type="password" id="pass-reg"  placeholder="Contraseña" range required>
+                <input type="submit" id="btn-registrarse" value="Registrarse">
+            </form>
+        </div> -->
+
+    <div class="contenedor-principal">
+
+        
+        <header class="cabecera"> 
+            <img class="img-cabecera" src="img/banner.jpg" alt=""> 
+        </header>
+
+        
+        <!-- <div id="welcome"></div> -->
+        
+        <nav>
+            <ul class="menu">
+                <li id="store"><i class="fas fa-store"></i></li>
+                <li id="show-cart"><i class="fas fa-shopping-cart"></i></li>
+                <!-- <li id="update-cart"><i class="fas fa-sync"></i></li> -->
+            </ul>
+        </nav>      
+        <main>   
+
+                <article class="productos" id="productos">
+                     
+
+                    <div class="box-producto">
+                           <div class="box-img-check"> <img src="img/p1.jpg" alt=""> 
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>
+                                <i></i>
+                          </div>
+                            <h2>Huerfana</h2>
+                            <h3>3$</h3>
+                            <span id="H100"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                            
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p2.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Viuda</h2>
+                            <h3>5$</h3>
+                            <span id="H200"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                            
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p3.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Especial</h2>
+                            <h3>6$</h3>
+                            <span id="H300"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p4.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Doubletastic</h2>
+                            <h3>9$</h3> 
+                            <span id="H400"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p5.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Diabla</h2>
+                            <h3>7.5$</h3>
+                            <span id="H500"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+                    
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p6.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Explosiva</h2>
+                            <h3>7.5$</h3>
+                            <span id="H600"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p7.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Coca-Cola</h2>
+                            <h3>1.5$</h3>
+                            <span id="H700"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p8.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Pepsi</h2>
+                            <h3>1.5$</h3>
+                            <span id="H800"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                    <div class="box-producto">
+                            <div class="box-img-check"> <img src="img/p9.jpg" alt="">
+                                <i><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></i>  
+                                <i></i>
+                          </div>
+                            <h2>Cerveza Zulia</h2>
+                            <h3>2$</h3>
+                            <span id="H900"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
+                    </div>
+
+                </article>
+
+                <article class="carrito" id="carrito" >
+                        <!-- <p class="encabezado">
+                                Si realizas algun cambio en esta sección como por ejemplo eliminar algun producto,
+                                deberas hacer click en el icono de las flechas para que se refleje la actualización del nuevo total a pagar 
+                        </p> -->
+                </article>   
+
+                <article class="pagar" id="pagar">
+
+                        <p class="titulo-pagar">Pagar Cuenta</p>
+                        <form class="form-pagar">
+                                <p class="encabezado">Ingresa el monto con el que pagaras el pedido</p>
+                                <input type="number" id="monto-pagar" placeholder="Ingrese un monto" required>
+                                <input type="submit" id="btn-pagar" value="Finalizar Compra">
+                        </form>
+
+                </article>
+
+        </main>
+        
+
+        <footer>
+                <p class="texto-pie">© 2020 Diego's Burgers</p>
+                <p class="texto-pie">sitio web desarrollado por <strong><a href="https://instagram.com/barbozadiego_dev" target="_blank">@barbozadiego_dev</a></strong></p>
+        </footer>
+
+
+    </div>
+    
+
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

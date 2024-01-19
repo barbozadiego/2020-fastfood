@@ -1,0 +1,84 @@
+/* @media only screen and (max-width: 1150px) and (min-width: 701px) { 
+
+  body {
+    font-size: .7em;
+  }
+} */
+
+@media (max-width: 500px) {
+
+
+
+  body {
+    font-size: .7em;
+  }
+
+  .cabecera {
+    width: 100%;
+  }
+  
+
+  .productos {
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+
+.box-producto {
+    max-width: 100%;
+  }
+
+  .fas.fa-check-circle {
+    font-size: 5em;
+}
+
+  .productList {
+    display: block;
+    grid-template-columns: none;
+    padding: 2em 0;
+    align-items: none;
+    border-bottom: .1em solid #eee;
+    position: relative;
+  }
+
+  .cabecera-cart {
+      display: none;
+  }
+
+  .poster, .codigo, .nombre, .cantidad, .subtotal, .delete {
+    display: block;
+    padding: 0 .5em ;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .far.fa-trash-alt{
+      position: absolute;
+      right: 0;
+      top: 2.5em;
+  }
+
+
+  .form-registro, .form-ingresar {
+    width: 65%;
+    padding: 3em;
+    border-radius: 1em;
+  }
+
+
+  #monto-pagar {
+    width: 80%;
+  }
+  
+  #btn-pagar {
+    width: 10em;
+  }
+
+
+  
+
+
+
+
+
+}
+
